@@ -20,4 +20,10 @@ const messageHoc = (WrappedComponent: any) => {
   return HOC;
 };
 
+// ----- HOCs -----
+// - don't change the HOC once in use
+// - <WrappedComponent injectedProp={injectedProp} {...passThroughProps} />
+// - don't use HOCs inside of a render method (can impact performance)
+// - HOCs are useful when an application grows
+
 export default messageHoc;
